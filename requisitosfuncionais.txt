@@ -1,0 +1,12 @@
+REQUISITOS FUNCIONAIS
+
+RF 1. O sistema deve ter opções de contato como telefone, whatsapp, e-mail, instagram, facebook, etc;
+RF 2. O sistema deve ser limitado para quem não está logado, oferecendo poucas funções;
+RF 3. O sistema deve permitir a busca de veículos por dono, modelo, marca, placa, ano; 
+RF 4. O sistema deve ser capaz de gerenciar o histórico de manutenções, registrar custos, acompanhar quilometragem e alertar quando um veículo estiver próximo da próxima revisão;
+RF 5. O sistema deve ter controle de login, cadastro de veículos, agendamento e registro de manutenções preventivas e corretivas e geração de relatórios;
+RF 6. O sistema deve permitir a alteração de dados dos seus usuários para serem atualizados ou excluídos;
+RF 7. O sistema deve enviar notificações por e-mail e celular para alertar sobre atualizações referente ao carro do/a dono/a, promoções ou algo relacionado à empresa;
+RF 8. O sistema deve conter recuperação de senha, caso seja esquecida, através de autenticação por e-mail ou celular;
+RF 9. O sistema deve exibir uma mensagem de erro com uma explicação em caso de falha no sistema;
+RF 10. O sistema deve ter a opção de cancelar agendamento.      

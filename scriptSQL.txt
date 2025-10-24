@@ -1,0 +1,74 @@
+CREATE DATABASE translog_db;
+
+USE translog_db;
+
+CREATE TABLE Usuario (
+    CPF VARCHAR PRIMARY KEY,
+    Nome VARCHAR,
+    E-mail VARCHAR,
+    Telefone VARCHAR,
+    Endereco VARCHAR,
+    CNH VARCHAR
+);
+
+CREATE TABLE Veiculo (
+    Placa VARCHAR PRIMARY KEY,
+    Marca VARCHAR,
+    Modelo VARCHAR,
+    Ano INTEGER,
+    Tipo VARCHAR,
+    fk_Usuario_CPF VARCHAR
+);
+
+CREATE TABLE Manutencao (
+    Tipo VARCHAR PRIMARY KEY,
+    Valor FLOAT,
+    Espec. VARCHAR,
+    Data DATE,
+    Hora TIME,
+    fk_Usuario_CPF VARCHAR
+);
+
+CREATE TABLE Alerta (
+    Mensagem VARCHAR PRIMARY KEY
+);
+
+CREATE TABLE Tem (
+    fk_Veiculo_Placa VARCHAR,
+    fk_Manutencao_Tipo VARCHAR
+);
+
+CREATE TABLE Cria (
+    fk_Manutencao_Tipo VARCHAR,
+    fk_Alerta_Mensagem VARCHAR
+);
+ 
+ALTER TABLE Veiculo ADD CONSTRAINT FK_Veiculo_2
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Manutencao ADD CONSTRAINT FK_Manutencao_2
+    FOREIGN KEY (fk_Usuario_CPF)
+    REFERENCES Usuario (CPF)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Tem ADD CONSTRAINT FK_Tem_1
+    FOREIGN KEY (fk_Veiculo_Placa)
+    REFERENCES Veiculo (Placa)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Tem ADD CONSTRAINT FK_Tem_2
+    FOREIGN KEY (fk_Manutencao_Tipo)
+    REFERENCES Manutencao (Tipo)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Cria ADD CONSTRAINT FK_Cria_1
+    FOREIGN KEY (fk_Manutencao_Tipo)
+    REFERENCES Manutencao (Tipo)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Cria ADD CONSTRAINT FK_Cria_2
+    FOREIGN KEY (fk_Alerta_Mensagem)
+    REFERENCES Alerta (Mensagem)
+    ON DELETE SET NULL;
