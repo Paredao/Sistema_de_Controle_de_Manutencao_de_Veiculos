@@ -1,11 +1,5 @@
 # A empresa TransLog Express, especializada em transporte rodoviário de cargas, deseja desenvolver um sistema de controle de manutenção de veículos. O objetivo é gerenciar o histórico de manutenções, registrar custos, acompanhar quilometragem e alertar quando um veículo estiver próximo da próxima revisão. O sistema será acessado por mecânicos, motoristas e administradores. Deve conter controle de login, cadastro de veículos, agendamento e registro de manutenções preventivas e corretivas, bem como geração de relatórios.
 
-# Instruções
-
-• Cada item é uma entrega obrigatória (como em uma prova prática).
-• Seja objetivo, mas demonstre raciocínio técnico.
-• Linguagem e SGBD de livre escolha.
-
 # 1. Lista de Requisitos Funcionais 
 
 Liste pelo menos 8 requisitos funcionais que o sistema deve atender.
