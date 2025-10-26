@@ -1,0 +1,12 @@
+O programa deve ser capaz de operar no Linux;
+O banco utilizado no desenvolvimento desse programa pode ser o MySQL ou PostgreSQL;
+As linguagens de programação incluem, mas não somente: Python, HTML, CSS, JS, Java;
+Frameworks utilizados incluem, mas não somente: DjangoRESTFramework e VueJS;
+Recursos mínimos de hardware: 
+
+CPU	8 núcleos virtuais (vCPU)
+Memória RAM	16 GB
+Armazenamento SSD 1 TB
+Sistema Operacional	Linux (Ubuntu Server 22.04 LTS)
+Banco de Dados	MySQL/PostgreSQL hospedado localmente | Banco separado (RDS, Cloud SQL, etc.)
+Backup e Logs	Backup diário + monitoramento de logs
