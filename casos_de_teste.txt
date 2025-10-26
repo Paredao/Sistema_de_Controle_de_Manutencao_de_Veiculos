@@ -1,0 +1,11 @@
+SUCESSOS
+
+1 - Usuário preenche os campos de login e clica em entrar e o sistema aprova, redirecionando-o para a tela princial;
+2 - Usuário preencha os campos de cadastro e clcia em cadastrar e o sistema aprova, redirecionando-o para a tela de login;
+3 - Usuário preenche os campos de cadastro de veículo e o sistema aprova com uma mensagem dizendo que o veículo foi cadastrado com sucesso.
+
+FALHAS
+
+1 - Usuário não preenche todos os campos de login ou preenche errado e clica em entrar, o sistema bloqueia sua entrada dizendo que um dos campos não foi preenchido ou foi preenchido incorretamente;
+2 - Usuário não preenche todos os campos de cadastro e clica em cadastrar, o sistema bloqueia seu cadastro com uma mensagem dizendo que todos os campos são obrigatórios e que devem ser preenchidos;
+3 - Usuário não preenche todos os campos de cadastro de veículo e clica em cadastrar, o sistema bloqueia o cadastro com uma mensagem dizendo que todos os campos do veículo devem ser preenchidos.
